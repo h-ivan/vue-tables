@@ -1,0 +1,58 @@
+{
+  "seats": [
+    {
+      "type": "square",
+      "seats": 2,
+      "seatNumber": 1,
+      "columnPosition": 2,
+      "rowPosition": 1,
+      "top": "-50px",
+      "left": "0"
+    },
+    {
+      "type": "square",
+      "seats": 2,
+      "seatNumber": 2,
+      "columnPosition": 2,
+      "rowPosition": 3,
+      "top": "50px",
+      "left": "0"
+    },
+    {
+      "type": "square",
+      "seats": 4,
+      "seatNumber": 1,
+      "columnPosition": 2,
+      "rowPosition": 1,
+      "top": "-50px",
+      "left": "0"
+    },
+    {
+      "type": "square",
+      "seats": 4,
+      "seatNumber": 2,
+      "columnPosition": 3,
+      "rowPosition": -3,
+      "top": "0",
+      "left": "50px"
+    },
+    {
+      "type": "square",
+      "seats": 4,
+      "seatNumber": 3,
+      "columnPosition": -3,
+      "rowPosition": 3,
+      "top": "50px",
+      "left": "0"
+    },
+    {
+      "type": "square",
+      "seats": 4,
+      "seatNumber": 4,
+      "columnPosition": 1,
+      "rowPosition": 2,
+      "top": "0",
+      "left": "-50px"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+    "tables": [{
+      "type": "square",
+      "seats": 2,
+      "gridColumns": 3,
+      "gridRows": 3
+    },
+    {
+      "type": "square",
+      "seats": 4,
+      "gridColumns": 3,
+      "gridRows": 3
+    }]
+
+}
