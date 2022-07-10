@@ -1,4 +1,5 @@
 <script setup>
+  import {table} from '../db.json'
   import Table from "./Table.vue";
 
   defineProps({
@@ -6,13 +7,11 @@
   })
 
 
-  const tableStyle = {seats: 4, type: 'square', left: '100px', top: '100px'};
-
 </script>
 
 <template>
   <div class="room">
-    <Table :style="tableStyle"/>
+    <Table v-for="(table, index) in table" :details="table" :key="table.id" />
   </div>
 </template>
 

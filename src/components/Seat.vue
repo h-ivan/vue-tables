@@ -4,7 +4,8 @@ import {seats} from '../seats.json';
   const props = defineProps({
     seats: Number,
     number: Number,
-    type: String
+    type: String,
+    members: Object
   })
 
 
@@ -13,12 +14,16 @@ import {seats} from '../seats.json';
         && seat.type === props.type
   })
 
+  const currentMember = props.members.find(member => {
+    return member.seat === ( props.number + 1)
+  })
+
 
 </script>
 
 <template>
   <div class="seat">
-    {{currentSeat.seatNumber}}
+    <input class="seat-name" type="text" v-model="currentMember.name">
   </div>
 </template>
 
@@ -36,6 +41,23 @@ import {seats} from '../seats.json';
   grid-row-start: v-bind('currentSeat.rowPosition');
   top: v-bind('currentSeat.top');
   left: v-bind('currentSeat.left');
+}
+
+.seat-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 100%;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+  outline: none;
 }
 
 </style>

@@ -1,0 +1,49 @@
+{
+  "table": [{
+    "id": 1,
+    "type": "square",
+    "seats": 4,
+    "image": "../src/assets/img/Placeholder.svg",
+    "members": [
+      {
+        "name": "Name 1",
+        "seat": 1
+      },
+      {
+        "name": "Name 2",
+        "seat": 2
+      },
+      {
+        "name": "Name 3",
+        "seat": 3
+      },
+      {
+        "name": "Name 4",
+        "seat": 4
+      }
+    ],
+    "left": "100px",
+    "top": "100px"
+  },
+    {
+      "id": 2,
+      "type": "square",
+      "seats": 2,
+      "image": "../src/assets/img/Placeholder.svg",
+      "members": [
+        {
+          "name": "Name 5",
+          "seat": 1
+        },
+        {
+          "name": "Name 6",
+          "seat": 2
+        }
+      ],
+      "left": "500px",
+      "top": "100px"
+    }
+  ]
+
+
+}

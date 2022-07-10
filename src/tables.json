@@ -3,13 +3,17 @@
       "type": "square",
       "seats": 2,
       "gridColumns": 3,
-      "gridRows": 3
+      "gridRows": 3,
+      "width": "300px",
+      "height": "300px"
     },
     {
       "type": "square",
       "seats": 4,
       "gridColumns": 3,
-      "gridRows": 3
+      "gridRows": 3,
+      "width": "300px",
+      "height": "300px"
     }]
 
 }
