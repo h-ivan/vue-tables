@@ -10,14 +10,12 @@
     return table.seats === props.details.seats && table.type === props.details.type
   })
 
-  const bgImage = `url(${props.details.image})`;
-
 
 </script>
 
 <template>
   <div :class="props.details.type" class="table">
-<!--    <img :src="props.details.image" alt="Avatar" style="width:100%">-->
+    <div class="table-name">{{props.details.name}}</div>
     <Seat class="seat" v-for="(seat, index) in props.details.seats"
           :number="index"
           :seats="props.details.seats"
@@ -33,17 +31,26 @@
     left: v-bind('props.details.left');
     top: v-bind('props.details.top');
     border: 2px solid black;
-    background: v-bind('bgImage') no-repeat;
-    background-size: cover;
+  }
+
+  .table-name {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .square {
-    width: v-bind('table.width');
-    height: v-bind('table.height');
     display: grid;
-    grid-template-rows: repeat(v-bind('table.gridColumns'), 1fr);
-    grid-template-columns: repeat(v-bind('table.gridRows'), 1fr);
-    justify-items: center;
+    grid-template-rows: repeat(v-bind('table.gridColumns'), 30px);
+    grid-template-columns: repeat(v-bind('table.gridRows'), 30px);
+  }
+
+  .rectangle {
+    display: grid;
+    grid-template-rows: repeat(v-bind('table.gridColumns'), 30px);
+    grid-template-columns: repeat(v-bind('table.gridRows'), 50px);
   }
 
 </style>

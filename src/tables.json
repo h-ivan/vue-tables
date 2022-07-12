@@ -1,19 +1,52 @@
 {
-    "tables": [{
+  "tables": [
+    {
       "type": "square",
       "seats": 2,
       "gridColumns": 3,
-      "gridRows": 3,
-      "width": "300px",
-      "height": "300px"
+      "gridRows": 3
     },
     {
       "type": "square",
       "seats": 4,
       "gridColumns": 3,
-      "gridRows": 3,
-      "width": "300px",
-      "height": "300px"
-    }]
-
+      "gridRows": 3
+    },
+    {
+      "type": "square",
+      "seats": 6,
+      "gridColumns": 5,
+      "gridRows": 5
+    },
+    {
+      "type": "square",
+      "seats": 8,
+      "gridColumns": 5,
+      "gridRows": 5
+    },
+    {
+      "type": "square",
+      "seats": 10,
+      "gridColumns": 7,
+      "gridRows": 7
+    },
+    {
+      "type": "square",
+      "seats": 12,
+      "gridColumns": 7,
+      "gridRows": 7
+    },
+    {
+      "type": "rectangle",
+      "seats": 2,
+      "gridColumns": 3,
+      "gridRows": 3
+    },
+    {
+      "type": "rectangle",
+      "seats": 4,
+      "gridColumns": 3,
+      "gridRows": 3
+    }
+  ]
 }

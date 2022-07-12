@@ -18,12 +18,14 @@ import {seats} from '../seats.json';
     return member.seat === ( props.number + 1)
   })
 
+  const transform =`rotate(${currentSeat.nameRotate}) translate(${currentSeat.nameTranslate})`
+
 
 </script>
 
 <template>
   <div class="seat">
-    <input class="seat-name" type="text" v-model="currentMember.name">
+    <input :class="`seat-name ${currentSeat.namePosition}`" type="text" v-model="currentMember.name">
   </div>
 </template>
 
@@ -32,8 +34,8 @@ import {seats} from '../seats.json';
 .seat {
   position: relative;
   box-sizing: border-box;
-  width: 100px;
-  height: 100px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   background-color: #f3f3f3;
   border: 2px solid black;
@@ -45,19 +47,38 @@ import {seats} from '../seats.json';
 
 .seat-name {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 14px;
+  top: v-bind('currentSeat.namePositionTop');
+  left: v-bind('currentSeat.namePositionLeft');
+  transform: v-bind('transform');
+  font-size: 11px;
   text-align: center;
   color: #000;
-  background-color: #fff;
-  border: 2px solid black;
-  border-radius: 100%;
-  padding: 0.5rem;
-  width: 100%;
-  height: 100%;
+  width: 60px;
   outline: none;
+}
+
+.name-top {
+  top: -25px;
+  left: -23px;
+  transform: rotate(-30deg);
+}
+
+.name-bottom {
+  top: 32px;
+  left: -14px;
+  transform: rotate(-30deg);
+}
+
+.name-right {
+  top: -32px;
+  left: 15px;
+  transform: rotate(-30deg);
+}
+
+.name-left {
+  top: -6px;
+  left: -55px;
+  transform: rotate(-30deg);
 }
 
 </style>
