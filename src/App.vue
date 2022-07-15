@@ -1,7 +1,7 @@
 <script setup>
 import Room from './components/Room.vue';
 
-const roomSize = {width: '1200px', height: '2200px'};
+const roomSize = {width: '1200px', height: '3000px'};
 
 </script>
 

@@ -107,6 +107,42 @@
       "seats": 12,
       "gridColumns": 3,
       "gridRows": 8
+    },
+    {
+      "type": "circle",
+      "seats": 2,
+      "gridColumns": 3,
+      "gridRows": 3
+    },
+    {
+      "type": "circle",
+      "seats": 4,
+      "gridColumns": 3,
+      "gridRows": 3
+    },
+    {
+      "type": "circle",
+      "seats": 6,
+      "gridColumns": 5,
+      "gridRows": 5
+    },
+    {
+      "type": "circle",
+      "seats": 8,
+      "gridColumns": 5,
+      "gridRows": 5
+    },
+    {
+      "type": "circle",
+      "seats": 10,
+      "gridColumns": 7,
+      "gridRows": 7
+    },
+    {
+      "type": "circle",
+      "seats": 12,
+      "gridColumns": 7,
+      "gridRows": 7
     }
   ]
 }

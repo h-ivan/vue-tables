@@ -1309,6 +1309,439 @@
       "top": "-15px",
       "left": "-15px",
       "namePosition": "name-left"
+    },
+    {
+      "type": "circle",
+      "seats": 2,
+      "seatNumber": 1,
+      "columnPosition": 2,
+      "rowPosition": 1,
+      "top": "-15px",
+      "left": "0",
+      "namePosition": "name-top"
+    },
+    {
+      "type": "circle",
+      "seats": 2,
+      "seatNumber": 2,
+      "columnPosition": 2,
+      "rowPosition": 3,
+      "top": "15px",
+      "left": "0",
+      "namePosition": "name-bottom"
+    },
+
+
+
+    {
+      "type": "circle",
+      "seats": 4,
+      "seatNumber": 1,
+      "columnPosition": 2,
+      "rowPosition": 1,
+      "top": "-15px",
+      "left": "0",
+      "namePosition": "name-top"
+    },
+    {
+      "type": "circle",
+      "seats": 4,
+      "seatNumber": 2,
+      "columnPosition": 3,
+      "rowPosition": 2,
+      "top": "0",
+      "left": "15px",
+      "namePosition": "name-right"
+    },
+    {
+      "type": "circle",
+      "seats": 4,
+      "seatNumber": 3,
+      "columnPosition": 2,
+      "rowPosition": 3,
+      "top": "15px",
+      "left": "0",
+      "namePosition": "name-bottom"
+    },
+    {
+      "type": "circle",
+      "seats": 4,
+      "seatNumber": 4,
+      "columnPosition": 1,
+      "rowPosition": 2,
+      "top": "0",
+      "left": "-15px",
+      "namePosition": "name-left"
+    },
+
+
+
+    {
+      "type": "circle",
+      "seats": 6,
+      "seatNumber": 1,
+      "columnPosition": 2,
+      "rowPosition": 1,
+      "top": "-5px",
+      "left": "-10px",
+      "namePosition": "name-top"
+    },
+    {
+      "type": "circle",
+      "seats": 6,
+      "seatNumber": 2,
+      "columnPosition": 4,
+      "rowPosition": 1,
+      "top": "-5px",
+      "left": "10px",
+      "namePosition": "name-top"
+    },
+    {
+      "type": "circle",
+      "seats": 6,
+      "seatNumber": 3,
+      "columnPosition": 5,
+      "rowPosition": 3,
+      "top": "0",
+      "left": "15px",
+      "namePosition": "name-right"
+    },
+    {
+      "type": "circle",
+      "seats": 6,
+      "seatNumber": 4,
+      "columnPosition": 4,
+      "rowPosition": 5,
+      "top": "5px",
+      "left": "10px",
+      "namePosition": "name-bottom"
+    },
+    {
+      "type": "circle",
+      "seats": 6,
+      "seatNumber": 5,
+      "columnPosition": -5,
+      "rowPosition": 5,
+      "top": "5px",
+      "left": "-10px",
+      "namePosition": "name-bottom"
+    },
+    {
+      "type": "circle",
+      "seats": 6,
+      "seatNumber": 6,
+      "columnPosition": 1,
+      "rowPosition": 3,
+      "top": "0",
+      "left": "-15px",
+      "namePosition": "name-left"
+    },
+
+
+
+    {
+      "type": "circle",
+      "seats": 8,
+      "seatNumber": 1,
+      "columnPosition": 2,
+      "rowPosition": 1,
+      "top": "-15px",
+      "left": "0",
+      "namePosition": "name-top"
+    },
+    {
+      "type": "circle",
+      "seats": 8,
+      "seatNumber": 2,
+      "columnPosition": 4,
+      "rowPosition": 1,
+      "top": "-15px",
+      "left": "0",
+      "namePosition": "name-top"
+    },
+    {
+      "type": "circle",
+      "seats": 8,
+      "seatNumber": 3,
+      "columnPosition": 5,
+      "rowPosition": 2,
+      "top": "0",
+      "left": "15px",
+      "namePosition": "name-right"
+    },
+    {
+      "type": "circle",
+      "seats": 8,
+      "seatNumber": 4,
+      "columnPosition": 5,
+      "rowPosition": 4,
+      "top": "0px",
+      "left": "15px",
+      "namePosition": "name-right"
+    },
+    {
+      "type": "circle",
+      "seats": 8,
+      "seatNumber": 5,
+      "columnPosition": 4,
+      "rowPosition": 5,
+      "top": "15px",
+      "left": "0",
+      "namePosition": "name-bottom"
+    },
+    {
+      "type": "circle",
+      "seats": 8,
+      "seatNumber": 6,
+      "columnPosition": 2,
+      "rowPosition": 5,
+      "top": "15px",
+      "left": "0",
+      "namePosition": "name-bottom"
+    },
+    {
+      "type": "circle",
+      "seats": 8,
+      "seatNumber": 7,
+      "columnPosition": 1,
+      "rowPosition": 4,
+      "top": "0",
+      "left": "-15px",
+      "namePosition": "name-left"
+    },
+    {
+      "type": "circle",
+      "seats": 8,
+      "seatNumber": 8,
+      "columnPosition": 1,
+      "rowPosition": 2,
+      "top": "0",
+      "left": "-15px",
+      "namePosition": "name-left"
+    },
+
+
+    {
+      "type": "circle",
+      "seats": 10,
+      "seatNumber": 1,
+      "columnPosition": 2,
+      "rowPosition": 1,
+      "top": "-15px",
+      "left": "15px",
+      "namePosition": "name-top"
+    },
+    {
+      "type": "circle",
+      "seats": 10,
+      "seatNumber": 2,
+      "columnPosition": 5,
+      "rowPosition": 1,
+      "top": "-15px",
+      "left": "15px",
+      "namePosition": "name-top"
+    },
+    {
+      "type": "circle",
+      "seats": 10,
+      "seatNumber": 3,
+      "columnPosition": 7,
+      "rowPosition": 2,
+      "top": "0",
+      "left": "5px",
+      "namePosition": "name-right"
+    },
+    {
+      "type": "circle",
+      "seats": 10,
+      "seatNumber": 4,
+      "columnPosition": 7,
+      "rowPosition": 4,
+      "top": "0px",
+      "left": "20px",
+      "namePosition": "name-right"
+    },
+    {
+      "type": "circle",
+      "seats": 10,
+      "seatNumber": 5,
+      "columnPosition": 7,
+      "rowPosition": 6,
+      "top": "0",
+      "left": "5px",
+      "namePosition": "name-right"
+    },
+    {
+      "type": "circle",
+      "seats": 10,
+      "seatNumber": 6,
+      "columnPosition": 6,
+      "rowPosition": 7,
+      "top": "15px",
+      "left": "-15px",
+      "namePosition": "name-bottom"
+    },
+    {
+      "type": "circle",
+      "seats": 10,
+      "seatNumber": 7,
+      "columnPosition": 3,
+      "rowPosition": 7,
+      "top": "15px",
+      "left": "-15px",
+      "namePosition": "name-bottom"
+    },
+    {
+      "type": "circle",
+      "seats": 10,
+      "seatNumber": 8,
+      "columnPosition": 1,
+      "rowPosition": 6,
+      "top": "0",
+      "left": "-5px",
+      "namePosition": "name-left"
+    },
+    {
+      "type": "circle",
+      "seats": 10,
+      "seatNumber": 9,
+      "columnPosition": 1,
+      "rowPosition": 4,
+      "top": "0",
+      "left": "-20px",
+      "namePosition": "name-left"
+    },
+    {
+      "type": "circle",
+      "seats": 10,
+      "seatNumber": 10,
+      "columnPosition": 1,
+      "rowPosition": 2,
+      "top": "0",
+      "left": "-5px",
+      "namePosition": "name-left"
+    },
+
+
+    {
+      "type": "circle",
+      "seats": 12,
+      "seatNumber": 1,
+      "columnPosition": 2,
+      "rowPosition": 1,
+      "top": "-5px",
+      "left": "0",
+      "namePosition": "name-top"
+    },
+    {
+      "type": "circle",
+      "seats": 12,
+      "seatNumber": 2,
+      "columnPosition": 4,
+      "rowPosition": 1,
+      "top": "-20px",
+      "left": "0",
+      "namePosition": "name-top"
+    },
+    {
+      "type": "circle",
+      "seats": 12,
+      "seatNumber": 3,
+      "columnPosition": 6,
+      "rowPosition": 1,
+      "top": "-5px",
+      "left": "0",
+      "namePosition": "name-top"
+    },
+    {
+      "type": "circle",
+      "seats": 12,
+      "seatNumber": 4,
+      "columnPosition": 7,
+      "rowPosition": 2,
+      "top": "10px",
+      "left": "10px",
+      "namePosition": "name-right"
+    },
+    {
+      "type": "circle",
+      "seats": 12,
+      "seatNumber": 5,
+      "columnPosition": 7,
+      "rowPosition": 4,
+      "top": "0px",
+      "left": "20px",
+      "namePosition": "name-right"
+    },
+    {
+      "type": "circle",
+      "seats": 12,
+      "seatNumber": 6,
+      "columnPosition": 7,
+      "rowPosition": 6,
+      "top": "0",
+      "left": "6px",
+      "namePosition": "name-right"
+    },
+    {
+      "type": "circle",
+      "seats": 12,
+      "seatNumber": 7,
+      "columnPosition": 6,
+      "rowPosition": 7,
+      "top": "5px",
+      "left": "0",
+      "namePosition": "name-bottom"
+    },
+    {
+      "type": "circle",
+      "seats": 12,
+      "seatNumber": 8,
+      "columnPosition": 4,
+      "rowPosition": 7,
+      "top": "20px",
+      "left": "0",
+      "namePosition": "name-bottom"
+    },
+    {
+      "type": "circle",
+      "seats": 12,
+      "seatNumber": 9,
+      "columnPosition": 2,
+      "rowPosition": 7,
+      "top": "5px",
+      "left": "0",
+      "namePosition": "name-bottom"
+    },
+    {
+      "type": "circle",
+      "seats": 12,
+      "seatNumber": 10,
+      "columnPosition": 1,
+      "rowPosition": 6,
+      "top": "0",
+      "left": "-5px",
+      "namePosition": "name-left"
+    },
+    {
+      "type": "circle",
+      "seats": 12,
+      "seatNumber": 11,
+      "columnPosition": 1,
+      "rowPosition": 4,
+      "top": "0",
+      "left": "-15px",
+      "namePosition": "name-left"
+    },
+    {
+      "type": "circle",
+      "seats": 12,
+      "seatNumber": 12,
+      "columnPosition": 1,
+      "rowPosition": 2,
+      "top": "5px",
+      "left": "-5px",
+      "namePosition": "name-left"
     }
   ]
 }

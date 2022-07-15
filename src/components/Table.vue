@@ -45,7 +45,6 @@
     display: grid;
     grid-template-rows: repeat(v-bind('table.gridRows'), 30px);
     grid-template-columns: repeat(v-bind('table.gridColumns'), 30px);
-
   }
 
   .rectangle {
@@ -58,6 +57,13 @@
     display: grid;
     grid-template-rows: repeat(v-bind('table.gridRows'), 50px);
     grid-template-columns: repeat(v-bind('table.gridColumns'), 30px);
+  }
+
+  .circle {
+    display: grid;
+    grid-template-rows: repeat(v-bind('table.gridRows'), 30px);
+    grid-template-columns: repeat(v-bind('table.gridColumns'), 30px);
+    border-radius: 100%;
   }
 
 </style>
