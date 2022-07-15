@@ -47,6 +47,66 @@
       "seats": 4,
       "gridColumns": 3,
       "gridRows": 3
+    },
+    {
+      "type": "rectangle",
+      "seats": 6,
+      "gridColumns": 5,
+      "gridRows": 3
+    },
+    {
+      "type": "rectangle",
+      "seats": 8,
+      "gridColumns": 5,
+      "gridRows": 3
+    },
+    {
+      "type": "rectangle",
+      "seats": 10,
+      "gridColumns": 7,
+      "gridRows": 3
+    },
+    {
+      "type": "rectangle",
+      "seats": 12,
+      "gridColumns": 8,
+      "gridRows": 3
+    },
+    {
+      "type": "rectangle-inverted",
+      "seats": 2,
+      "gridColumns": 3,
+      "gridRows": 3
+    },
+    {
+      "type": "rectangle-inverted",
+      "seats": 4,
+      "gridColumns": 3,
+      "gridRows": 3
+    },
+    {
+      "type": "rectangle-inverted",
+      "seats": 6,
+      "gridColumns": 3,
+      "gridRows": 5
+    },
+    {
+      "type": "rectangle-inverted",
+      "seats": 8,
+      "gridColumns": 3,
+      "gridRows": 5
+    },
+    {
+      "type": "rectangle-inverted",
+      "seats": 10,
+      "gridColumns": 3,
+      "gridRows": 7
+    },
+    {
+      "type": "rectangle-inverted",
+      "seats": 12,
+      "gridColumns": 3,
+      "gridRows": 8
     }
   ]
 }

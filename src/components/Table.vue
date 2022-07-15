@@ -43,14 +43,21 @@
 
   .square {
     display: grid;
-    grid-template-rows: repeat(v-bind('table.gridColumns'), 30px);
-    grid-template-columns: repeat(v-bind('table.gridRows'), 30px);
+    grid-template-rows: repeat(v-bind('table.gridRows'), 30px);
+    grid-template-columns: repeat(v-bind('table.gridColumns'), 30px);
+
   }
 
   .rectangle {
     display: grid;
-    grid-template-rows: repeat(v-bind('table.gridColumns'), 30px);
-    grid-template-columns: repeat(v-bind('table.gridRows'), 50px);
+    grid-template-rows: repeat(v-bind('table.gridRows'), 30px);
+    grid-template-columns: repeat(v-bind('table.gridColumns'), 50px);
+  }
+
+  .rectangle-inverted {
+    display: grid;
+    grid-template-rows: repeat(v-bind('table.gridRows'), 50px);
+    grid-template-columns: repeat(v-bind('table.gridColumns'), 30px);
   }
 
 </style>
