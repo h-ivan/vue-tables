@@ -14,21 +14,22 @@ const table = tables.find(table => {
   return table.seats === props.details.seats && table.type === props.details.type
 })
 
-console.log(props.details)
 
-const position = {x: 0, y: 0}
 interact('.draggable').draggable({
   listeners: {
-    start(event) {
-      console.log(event.type, event.target)
-    },
     move(event) {
-      position.x += event.dx
-      position.y += event.dy
-      props.details.left = position.x + 'px'
-      props.details.top = position.y + 'px'
+
+      let target = event.target,
+      x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+      y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+      props.details.left = x + 'px'
+      props.details.top = y + 'px'
       event.target.style.transform =
-          `translate(${position.x}px, ${position.y}px)`
+          `translate(${x}px, ${y}px)`
+      target.setAttribute('data-x', x);
+      target.setAttribute('data-y', y);
+
       emit('table-updated', props.details)
     },
   }
@@ -39,8 +40,7 @@ interact('.draggable').draggable({
 <template>
 
   <div :class="props.details.type" class="table draggable">
-    <div class="table-name">{{ props.details.name }}
-    </div>
+    <input type="text" class="table-name" v-model="props.details.name"/>
     <Seat class="seat" v-for="(seat, index) in props.details.seats"
           :number="index"
           :seats="props.details.seats"
@@ -66,6 +66,7 @@ interact('.draggable').draggable({
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 80%;
 }
 
 .draggable {

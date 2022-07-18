@@ -8,7 +8,6 @@ defineProps({
 })
 
 const updateTable = (table) => {
-  console.log(table)
   // API CALL to update position
 }
 </script>
