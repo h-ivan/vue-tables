@@ -1,8 +1,8 @@
 {
-  "table": [
+  "tables": [
     {
       "id": 1,
-      "name": "Table 1",
+      "name": "AAAAA",
       "type": "square",
       "seats": 2,
       "members": [
@@ -15,7 +15,7 @@
           "seat": 2
         }
       ],
-      "left": "80px",
+      "left": "230px",
       "top": "100px"
     },
     {

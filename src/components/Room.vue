@@ -1,17 +1,23 @@
 <script setup>
-  import {table} from '../db.json'
-  import Table from "./Table.vue";
+import {tables} from '../db.json'
+import Table from "./Table.vue";
+import {ref} from "vue";
 
-  defineProps({
-    size: Object
-  })
+defineProps({
+  size: Object
+})
 
-
+const updateTable = (table) => {
+  console.log(table)
+  // API CALL to update position
+}
 </script>
 
 <template>
   <div class="room">
-    <Table v-for="(table, index) in table" :details="table" :key="table.id" />
+    <Table @tableUpdated="updateTable" :id="'table_'+table.id"
+           v-for="(table, index) in tables"
+           :details="table" :key="table.id"/>
   </div>
 </template>
 
