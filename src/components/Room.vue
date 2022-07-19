@@ -945,10 +945,10 @@ onMounted(() => {
         })
         table = table[0]
 
-        table.left = x + 'px'
-        table.top = y + 'px'
-        // event.target.style.transform =
-        //     `translate(${x}px, ${y}px)`
+        // table.left = x + 'px'
+        // table.top = y + 'px'
+        event.target.style.transform =
+            `translate(${x}px, ${y}px)`
         target.setAttribute('data-x', x);
         target.setAttribute('data-y', y);
         // emit('table-updated', props.details)
