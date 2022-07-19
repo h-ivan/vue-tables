@@ -1,8 +1,152 @@
 <script setup>
 import Seat from './Seat.vue'
-import {tables} from '../tables.json'
-import interact from "interactjs";
 
+const tables = [
+  {
+    "type": "square",
+    "seats": 2,
+    "gridColumns": 3,
+    "gridRows": 3
+  },
+  {
+    "type": "square",
+    "seats": 4,
+    "gridColumns": 3,
+    "gridRows": 3
+  },
+  {
+    "type": "square",
+    "seats": 6,
+    "gridColumns": 5,
+    "gridRows": 5
+  },
+  {
+    "type": "square",
+    "seats": 8,
+    "gridColumns": 5,
+    "gridRows": 5
+  },
+  {
+    "type": "square",
+    "seats": 10,
+    "gridColumns": 7,
+    "gridRows": 7
+  },
+  {
+    "type": "square",
+    "seats": 12,
+    "gridColumns": 7,
+    "gridRows": 7
+  },
+  {
+    "type": "rectangle",
+    "seats": 2,
+    "gridColumns": 3,
+    "gridRows": 3
+  },
+  {
+    "type": "rectangle",
+    "seats": 4,
+    "gridColumns": 3,
+    "gridRows": 3
+  },
+  {
+    "type": "rectangle",
+    "seats": 6,
+    "gridColumns": 5,
+    "gridRows": 3
+  },
+  {
+    "type": "rectangle",
+    "seats": 8,
+    "gridColumns": 5,
+    "gridRows": 3
+  },
+  {
+    "type": "rectangle",
+    "seats": 10,
+    "gridColumns": 7,
+    "gridRows": 3
+  },
+  {
+    "type": "rectangle",
+    "seats": 12,
+    "gridColumns": 8,
+    "gridRows": 3
+  },
+  {
+    "type": "rectangle-inverted",
+    "seats": 2,
+    "gridColumns": 3,
+    "gridRows": 3
+  },
+  {
+    "type": "rectangle-inverted",
+    "seats": 4,
+    "gridColumns": 3,
+    "gridRows": 3
+  },
+  {
+    "type": "rectangle-inverted",
+    "seats": 6,
+    "gridColumns": 3,
+    "gridRows": 5
+  },
+  {
+    "type": "rectangle-inverted",
+    "seats": 8,
+    "gridColumns": 3,
+    "gridRows": 5
+  },
+  {
+    "type": "rectangle-inverted",
+    "seats": 10,
+    "gridColumns": 3,
+    "gridRows": 7
+  },
+  {
+    "type": "rectangle-inverted",
+    "seats": 12,
+    "gridColumns": 3,
+    "gridRows": 8
+  },
+  {
+    "type": "circle",
+    "seats": 2,
+    "gridColumns": 3,
+    "gridRows": 3
+  },
+  {
+    "type": "circle",
+    "seats": 4,
+    "gridColumns": 3,
+    "gridRows": 3
+  },
+  {
+    "type": "circle",
+    "seats": 6,
+    "gridColumns": 5,
+    "gridRows": 5
+  },
+  {
+    "type": "circle",
+    "seats": 8,
+    "gridColumns": 5,
+    "gridRows": 5
+  },
+  {
+    "type": "circle",
+    "seats": 10,
+    "gridColumns": 7,
+    "gridRows": 7
+  },
+  {
+    "type": "circle",
+    "seats": 12,
+    "gridColumns": 7,
+    "gridRows": 7
+  }
+]
 
 const emit = defineEmits()
 
@@ -13,33 +157,10 @@ const props = defineProps({
 const table = tables.find(table => {
   return table.seats === props.details.seats && table.type === props.details.type
 })
-
-
-interact('.draggable').draggable({
-  listeners: {
-    move(event) {
-
-      let target = event.target,
-      x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
-      y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
-
-      props.details.left = x + 'px'
-      props.details.top = y + 'px'
-      event.target.style.transform =
-          `translate(${x}px, ${y}px)`
-      target.setAttribute('data-x', x);
-      target.setAttribute('data-y', y);
-
-      emit('table-updated', props.details)
-    },
-  }
-})
-
 </script>
 
 <template>
-
-  <div :class="props.details.type" class="table draggable">
+  <div :class="props.details.type" class="room-table draggable" :data-table="props.details.id">
     <input type="text" class="table-name" v-model="props.details.name"/>
     <Seat class="seat" v-for="(seat, index) in props.details.seats"
           :number="index"
@@ -52,7 +173,7 @@ interact('.draggable').draggable({
 </template>
 
 <style scoped>
-.table {
+.room-table {
   position: absolute;
   left: v-bind('props.details.left');
   top: v-bind('props.details.top');

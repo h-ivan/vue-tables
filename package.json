@@ -9,8 +9,7 @@
   },
   "dependencies": {
     "interactjs": "^1.10.17",
-    "vue": "^3.2.25",
-    "vue-interactjs": "^0.1.10"
+    "vue": "^3.2.25"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
