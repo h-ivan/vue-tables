@@ -1,5 +1,6 @@
 <script setup>
 import Seat from './Seat.vue'
+import {getCurrentInstance} from "vue";
 
 const tables = [
   {
@@ -147,7 +148,6 @@ const tables = [
     "gridRows": 7
   }
 ]
-
 const emit = defineEmits()
 
 const props = defineProps({
@@ -157,6 +157,10 @@ const props = defineProps({
 const table = tables.find(table => {
   return table.seats === props.details.seats && table.type === props.details.type
 })
+
+const removeTable = () => {
+  emit('tableDeleted', props.details)
+}
 </script>
 
 <template>
@@ -168,6 +172,9 @@ const table = tables.find(table => {
           :members="props.details.members"
           :type="props.details.type"
     />
+    <div @click="removeTable" class="delete-table">
+      <i class="fa fa-close"></i>
+    </div>
   </div>
 
 </template>
@@ -220,6 +227,25 @@ const table = tables.find(table => {
   grid-template-rows: repeat(v-bind('table.gridRows'), 30px);
   grid-template-columns: repeat(v-bind('table.gridColumns'), 30px);
   border-radius: 100%;
+}
+
+.room-table:hover .delete-table {
+  visibility: visible;
+}
+
+.delete-table {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: red;
+  color: white;
+  z-index: 99999 !important;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  visibility: hidden;
 }
 
 </style>
